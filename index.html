@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MDB4.12模板</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body text=“black” style="background-repeat:no-repeat;
+background-size:cover;background-color: #212121;">
+
+  <main>
+    <!--Section: Examples-->
+    <section id="examples" class="text-center">
+    
+        <!-- heading -->
+        <h2 class="mb-3 font-weight-bold"><center><font color="#FFE4E1"><br/>《通信软件开发与应用》课程结业报告</font><center></center></h2>
+        <h3 class="mb-3 font-weight-bold "><font color="#FFE4E1"><br/>实验内容概述</font></h3>
+        <p align="left" class="grey-text w-responsive mx-auto mb-3"><font color="#FFE4E1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本次实验进行了一个关于静态网站的制作，主要使用了HTML以及CSS框架中的MDB。此次开发过程持续了夜以继日的n天，最终基本展现出了我希望完成的效果。主要完成过程还是根据老师给的页面结构、页面主体进行修饰加工，变成自己的内容，并在制作过程中解决接二连三出现的问题，学习并掌握开发网站最基础的知识及实践。</font></p>
+
+          <h3 class="mb-3 font-weight-bold "><font color="#FFE4E1"><br/>实验问题解决</font></h3>
+        <p align="left" class="grey-text w-responsive mx-auto mb-1"><font color="#FFE4E1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本次实验经过了不可计数的修改，同时意味着我遇到了数不胜数的问题，当然，其中有解决了的，也有暂未被解决的，这个部分主要来盘盘我解决掉了的问题。</font></p>
+        <p align="left" class="grey-text w-responsive mx-auto mb-3"><font color="#FFE4E1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先，最最最先遇到的当然是导航条啦，想必大家都是从导航条入手，也是从这里就开始出现问题的吧(●'◡'●)。一打开的导航条设置颜色是蓝色，我觉得实在太突兀了立马给他改成了白色，当时的css中的背景图是黑色（如第一个页面所见），所以这个白色导航条简直就是完美契合呀！然而，当我建立第二个页面时，我的导航条，它无了，这是为什么呢，当然是因为我新建的页面和我的导航条都是白色的！但！这不是什么大问题，因为刚好我想把我的页面背景全部做成黑色，毫无疑问，修改导航条颜色就成了一个滞留问题，下一节会讲到……言归正传，我在HTML里通过在body语句里添加内容，如愿增加了我想要的背景图，代码如下：body text=“black” style="background-repeat:no-repeat;
+          background-size:cover;background-color:#212121;"。至此，我就勉强算是解决掉了第一大难题。啊对，导航条还遇到了问题，就是当我将navbar部分的语句运行时无法显示出正常导航条该有的样子，而是竖着排列在页面头部的左侧，最后发现是因为head部分没有填写相应语句导致的，这个解决地较为顺利，改了一处后面每个页面使用相同语句即可。导航条算是真的解决了，随之而来的还有我每个页面标题的问题，导航条在那完美地和我的标题重合导致非常难看，我就开始查询如何移动标题位置，我想应该还有更高级的写法，但我找到了最简单的，就是空行，br/语句，两个br/是一行，真是机智，标题问题也完美解决。（1、3、4、5部分的内容都可以证明，至于为什么第2部分Rap的标题没有放下来，当然是因为导航条没有挡到它，而且我试过了放下来更丑）。这时，我的背景图和导航条做好了，新的问题来了，背景图是黑的，但文字大多也是黑色，
+        就需要修改文字颜色，又在纠结到底是在CSS中改，还是HTML里，最后当然是选择简单了HTML啦，修改语句如下：font color="pink">>inginging，看到了吗，那个pink就是字体颜色噢，具体是用在Constellation那一部分的，可以再回头去看看，这个粉可真是太好看啦。OK，这一部分也差不多了，接下来就是一些7788的小问题啦，比如在写这篇报告用到的文字左对齐啦（align="left"），空格nbsp一定要加分号才有用等等（写到这我突然发现没加分号也有用555，打脸现场）。至此，这一part就差不多了，其实过程中的小问题很多，在这里也仅仅展现了主要部分，不过也已经噼里啪啦半天了，好了我去写下一部分啦。</font></p>
+
+          <h3 class="mb-3 font-weight-bold "><font color="#FFE4E1"><br/>实验问题滞留</font></h3>
+        <p align="left" class="grey-text w-responsive mx-auto mb-5"><font color="#FFE4E1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好的，我来了，按理说这应该是悲伤的一部分，因为这里是“未能解决问题”part，是的，毫无疑问它的开头又是导航条，就是关于这个css，我到现在其实也没有太明白，明明每个页面都有style.css的语句，却只有index文件可以显示出其内容，并且我在其他页面修改成style1.css文件也无法应用与此，故其成为滞留问题，如果时间充足我必会愿意深究，但现在我没时间了，快到deadline了而我还在赶报告555，怎么这周的deadline这么多啊……还有，关于导航条的颜色因为我修改了背景颜色故白色导航条也能用，但我想应该在CSS里也能修改，但我没有继续研究了，这就是我上文谈及“勉强”解决导航条问题的原因，包括CSS中的背景图和背景色问题，我一直妄图通过修改style.css里的内容来改变每个页面背景图，奈何在求助同学后被告知直接在HTML中修改，所以我也没有继续研究CSS中怎么操作了，这也是我在上文选择CSS和HTML时说“又”纠结的原因。
+          接下来，给自己找事的我又迎来了个大难题，就是我希望在每个页面都放上我页面主人公的歌曲O(∩_∩)O，想来容易做来难，我开始查询如何在HTML里放置歌曲，搜到的全是放背景音乐的，可我不是想放背景音乐啊亲，最后我急中生智找了个背景音乐的点进去一看，果然，他有教自动播放与手动播放的不同语句，so赶紧把我的歌曲链接贴进手动播放的语句中，确实显示了，但仅有简简单单的一个开始按键，我觉得太丑，遂放弃（这个过程远不止描述的这么简单，起码进行了两个小时，我点开了n个csdn，尝试了n种办法，最后追求颜值的我被迫放弃）。
+        </font></p>
+
+        <h3 class="mb-3 font-weight-bold "><font color="#FFE4E1"><br/>课程总结</font></h3>
+        <p align="left" class="grey-text w-responsive mx-auto mb-5"><font color="#FFE4E1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这次做网页花费很多时间和精力，遇到了各种各样的问题，但是我第一次在这个专业做到了让我感兴趣的东西，让我遇到问题有去解决的欲望，在解决之后享受达成新成就的满足，但也很遗憾，在大学学习结束之际才接触到这门课，感受到这种感觉，不过学无止境，结束是为了更好的开始，感谢王老师传授的的满满干货，感谢王老师让我在这个专业感受到了自己的点点兴趣，在之后有时间我会继续JS、Angular的学习与运用，其实想说的很多，但是写着写着就忘了，那就言尽于此吧，我要继续去学习托管网站了（这一part应该放在“未解决的问题”里），see u.       </font></p>
+  
+</body>
+</html>
